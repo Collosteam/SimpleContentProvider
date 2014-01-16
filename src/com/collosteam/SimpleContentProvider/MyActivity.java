@@ -4,6 +4,7 @@ package com.collosteam.SimpleContentProvider;
 import android.app.Activity;
 import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,13 +16,13 @@ import android.widget.SimpleCursorAdapter;
 
 public class MyActivity extends Activity {
 
-    final String LOG_TAG = "myLogs";
+      final String LOG_TAG = "myLogs";
 
-    final Uri CONTACT_URI = Uri
+    public static final Uri CONTACT_URI = Uri
             .parse("content://com.collosteam.provider.AdressBook/contacts");
 
-    final String CONTACT_NAME = "name";
-    final String CONTACT_EMAIL = "email";
+    public static final String CONTACT_NAME = "name";
+    public static final String CONTACT_EMAIL = "email";
 
     EditText etName;
     EditText etEmail;
@@ -50,6 +51,10 @@ public class MyActivity extends Activity {
 
     }
 
+    /**
+     * Вставляем данные через сервис
+     * */
+
     public void onClickInsert(View v) {
 
 
@@ -59,12 +64,19 @@ public class MyActivity extends Activity {
 
         if(name.trim().length()>0&&email.trim().length()>0) {
 
-            ContentValues cv = new ContentValues();
+            Intent intent = new Intent(this,ProviderService.class);
+            intent.putExtra("name",name);
+            intent.putExtra("email",email);
+
+            startService(intent);
+
+
+       /*     ContentValues cv = new ContentValues();
         cv.put(CONTACT_NAME, name);
         cv.put(CONTACT_EMAIL, email);
 
         Uri newUri = getContentResolver().insert(CONTACT_URI, cv);
-        Log.d(LOG_TAG, "insert, result Uri : " + newUri.toString());
+        Log.d(LOG_TAG, "insert, result Uri : " + newUri.toString());*/
 
 
         }

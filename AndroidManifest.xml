@@ -16,6 +16,7 @@
         <provider android:authorities="com.collosteam.provider.AdressBook" android:name=".MyContactsProvider">
 
         </provider>
-        
+
+        <service android:name=".ProviderService"/>
     </application>
 </manifest>
