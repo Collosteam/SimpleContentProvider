@@ -36,6 +36,37 @@
                 android:text="@string/error">
         </Button>
     </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/textView"
+                android:layout_marginLeft="24dp" android:layout_alignBottom="@+id/editText_name"
+                android:layout_alignParentLeft="true" android:layout_marginRight="25dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_name" android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true" android:layout_toRightOf="@+id/textView"
+                android:layout_alignParentRight="true" android:layout_margin="5dp" android:text="Vasa Pupend"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/textView2"
+                android:layout_alignBaseline="@+id/editText_email" android:layout_alignBottom="@+id/editText_email"
+                android:layout_alignLeft="@+id/textView"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_email" android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/editText_name"
+                android:layout_marginRight="3dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"
+                android:layout_alignLeft="@+id/editText_name" android:text="vasa2014@collosteam.com"/>
+    </RelativeLayout>
     <ListView
             android:id="@+id/lvContact"
             android:layout_width="match_parent"

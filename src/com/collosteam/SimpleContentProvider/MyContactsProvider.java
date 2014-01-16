@@ -16,7 +16,7 @@ public class MyContactsProvider extends ContentProvider {
 
     // // Константы для БД
     // БД
-    static final String DB_NAME = "mydb";
+    static final String DB_NAME = "collosDB";
     static final int DB_VERSION = 1;
 
     // Таблица
@@ -30,7 +30,7 @@ public class MyContactsProvider extends ContentProvider {
     // Скрипт создания таблицы
     static final String DB_CREATE = "create table " + CONTACT_TABLE + "("
             + CONTACT_ID + " integer primary key autoincrement, "
-            + CONTACT_NAME + " text, " + CONTACT_EMAIL + " text" + ");";
+            + CONTACT_NAME + " text, " + CONTACT_EMAIL + " text, UNIQUE(" + CONTACT_NAME + ") ON CONFLICT REPLACE)";
 
     // // Uri
     // authority

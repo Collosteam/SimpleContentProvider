@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -21,6 +22,9 @@ public class MyActivity extends Activity {
 
     final String CONTACT_NAME = "name";
     final String CONTACT_EMAIL = "email";
+
+    EditText etName;
+    EditText etEmail;
 
     /** Called when the activity is first created. */
     @Override
@@ -39,14 +43,31 @@ public class MyActivity extends Activity {
 
         ListView lvContact = (ListView) findViewById(R.id.lvContact);
         lvContact.setAdapter(adapter);
+
+        etName  = (EditText)findViewById(R.id.editText_name);
+        etEmail  = (EditText)findViewById(R.id.editText_email);
+
+
     }
 
     public void onClickInsert(View v) {
-        ContentValues cv = new ContentValues();
-        cv.put(CONTACT_NAME, "name 4");
-        cv.put(CONTACT_EMAIL, "email 4");
+
+
+        String name =     etName.getText().toString();
+
+        String email =     etEmail.getText().toString();
+
+        if(name.trim().length()>0&&email.trim().length()>0) {
+
+            ContentValues cv = new ContentValues();
+        cv.put(CONTACT_NAME, name);
+        cv.put(CONTACT_EMAIL, email);
+
         Uri newUri = getContentResolver().insert(CONTACT_URI, cv);
         Log.d(LOG_TAG, "insert, result Uri : " + newUri.toString());
+
+
+        }
     }
 
     public void onClickUpdate(View v) {
