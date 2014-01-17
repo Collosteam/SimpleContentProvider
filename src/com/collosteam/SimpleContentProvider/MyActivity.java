@@ -2,21 +2,20 @@ package com.collosteam.SimpleContentProvider;
 
 
 import android.app.Activity;
-import android.content.ContentUris;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 public class MyActivity extends Activity {
 
-      final String LOG_TAG = "myLogs";
+    final String LOG_TAG = "myLogs";
 
     public static final Uri CONTACT_URI = Uri
             .parse("content://com.collosteam.provider.AdressBook/contacts");
@@ -27,7 +26,13 @@ public class MyActivity extends Activity {
     EditText etName;
     EditText etEmail;
 
-    /** Called when the activity is first created. */
+
+    int selectedID = -1;
+
+
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,37 +42,46 @@ public class MyActivity extends Activity {
                 null, null);
         startManagingCursor(cursor);
 
-        String from[] = { "name", "email" };
-        int to[] = { android.R.id.text1, android.R.id.text2 };
+        String from[] = {"name", "email"};
+        int to[] = {android.R.id.text1, android.R.id.text2};
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
                 android.R.layout.simple_list_item_2, cursor, from, to);
 
         ListView lvContact = (ListView) findViewById(R.id.lvContact);
         lvContact.setAdapter(adapter);
 
-        etName  = (EditText)findViewById(R.id.editText_name);
-        etEmail  = (EditText)findViewById(R.id.editText_email);
+        lvContact.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                selectedID = (int) id;
+
+            }
+        });
+
+        etName = (EditText) findViewById(R.id.editText_name);
+        etEmail = (EditText) findViewById(R.id.editText_email);
 
 
     }
 
     /**
      * Вставляем данные через сервис
-     * */
+     */
 
     public void onClickInsert(View v) {
 
 
-        String name =     etName.getText().toString();
+        String name = etName.getText().toString();
 
-        String email =     etEmail.getText().toString();
+        String email = etEmail.getText().toString();
 
-        if(name.trim().length()>0&&email.trim().length()>0) {
+        if (name.trim().length() > 0 && email.trim().length() > 0) {
 
-            Intent intent = new Intent(this,ProviderService.class);
-            intent.putExtra("name",name);
-            intent.putExtra("email",email);
-
+            Intent intent = new Intent(this, ProviderService.class);
+            intent.setAction(ProviderService.ACTION_INSERT);
+            intent.putExtra("name", name);
+            intent.putExtra("email", email);
             startService(intent);
 
 
@@ -83,18 +97,46 @@ public class MyActivity extends Activity {
     }
 
     public void onClickUpdate(View v) {
-        ContentValues cv = new ContentValues();
+
+        String name = etName.getText().toString();
+
+        String email = etEmail.getText().toString();
+
+        if (name.trim().length() > 0 && email.trim().length() > 0 && selectedID > 0) {
+
+            Intent intent = new Intent(this, ProviderService.class);
+            intent.setAction(ProviderService.ACTION_UPDATE);
+            intent.putExtra("id", selectedID);
+            intent.putExtra("name", name);
+            intent.putExtra("email", email);
+            startService(intent);
+
+            selectedID = -1;
+        }
+
+
+
+
+       /* ContentValues cv = new ContentValues();
         cv.put(CONTACT_NAME, "name 5");
         cv.put(CONTACT_EMAIL, "email 5");
         Uri uri = ContentUris.withAppendedId(CONTACT_URI, 2);
         int cnt = getContentResolver().update(uri, cv, null, null);
-        Log.d(LOG_TAG, "update, count = " + cnt);
+        Log.d(LOG_TAG, "update, count = " + cnt);*/
     }
 
     public void onClickDelete(View v) {
-        Uri uri = ContentUris.withAppendedId(CONTACT_URI, 3);
-        int cnt = getContentResolver().delete(uri, null, null);
-        Log.d(LOG_TAG, "delete, count = " + cnt);
+
+        if (selectedID > 0) {
+
+            Intent intent = new Intent(this, ProviderService.class);
+            intent.setAction(ProviderService.ACTION_DELETE);
+            intent.putExtra("id", selectedID);
+            startService(intent);
+            selectedID = -1;
+        }
+
+
     }
 
     public void onClickError(View v) {

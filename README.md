@@ -1,4 +1,4 @@
 SimpleContentProvider
 =====================
 
-Somple Content Provider example
+Simple Content Provider example
