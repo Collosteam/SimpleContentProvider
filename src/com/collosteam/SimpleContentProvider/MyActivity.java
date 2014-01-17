@@ -25,10 +25,7 @@ public class MyActivity extends Activity {
 
     EditText etName;
     EditText etEmail;
-
-
     int selectedID = -1;
-
 
     /**
      * Called when the activity is first created.
@@ -40,6 +37,7 @@ public class MyActivity extends Activity {
 
         Cursor cursor = getContentResolver().query(CONTACT_URI, null, null,
                 null, null);
+
         startManagingCursor(cursor);
 
         String from[] = {"name", "email"};
@@ -62,7 +60,6 @@ public class MyActivity extends Activity {
         etName = (EditText) findViewById(R.id.editText_name);
         etEmail = (EditText) findViewById(R.id.editText_email);
 
-
     }
 
     /**
@@ -71,19 +68,15 @@ public class MyActivity extends Activity {
 
     public void onClickInsert(View v) {
 
-
         String name = etName.getText().toString();
-
         String email = etEmail.getText().toString();
 
         if (name.trim().length() > 0 && email.trim().length() > 0) {
-
             Intent intent = new Intent(this, ProviderService.class);
             intent.setAction(ProviderService.ACTION_INSERT);
             intent.putExtra("name", name);
             intent.putExtra("email", email);
             startService(intent);
-
 
        /*     ContentValues cv = new ContentValues();
         cv.put(CONTACT_NAME, name);
@@ -92,25 +85,21 @@ public class MyActivity extends Activity {
         Uri newUri = getContentResolver().insert(CONTACT_URI, cv);
         Log.d(LOG_TAG, "insert, result Uri : " + newUri.toString());*/
 
-
         }
     }
 
     public void onClickUpdate(View v) {
 
         String name = etName.getText().toString();
-
         String email = etEmail.getText().toString();
 
         if (name.trim().length() > 0 && email.trim().length() > 0 && selectedID > 0) {
-
             Intent intent = new Intent(this, ProviderService.class);
             intent.setAction(ProviderService.ACTION_UPDATE);
             intent.putExtra("id", selectedID);
             intent.putExtra("name", name);
             intent.putExtra("email", email);
             startService(intent);
-
             selectedID = -1;
         }
 

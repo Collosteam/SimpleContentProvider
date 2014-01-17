@@ -11,11 +11,13 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9a397d1-2876-42bd-aa17-3b2497f294b8" name="Default" comment="">
+    <list default="true" id="b9a397d1-2876-42bd-aa17-3b2497f294b8" name="Default" comment="Insert all methods to ProviderService&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/GetAPILevel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/SyncAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/xml/authenticator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/xml/syncadapter.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/ProviderService.java" afterPath="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/ProviderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleContentProvider.iws" />
@@ -89,10 +91,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="74" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="18" column="30" selection-start="825" selection-end="825" vertical-scroll-proportion="0.7338129" vertical-offset="0" max-vertical-offset="612">
+              <folding>
+                <element signature="e#310#328#0" expanded="true" />
+                <element signature="e#443#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyncAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/SyncAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syncadapter.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/syncadapter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -101,20 +124,38 @@
       <file leaf-file-name="ProviderService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/ProviderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="6" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1360">
+            <state line="44" column="6" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="28" selection-start="3339" selection-end="3339" vertical-scroll-proportion="0.53424656" vertical-offset="1517" max-vertical-offset="2499">
+            <state line="0" column="44" selection-start="8" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
               <folding>
-                <element signature="e#1604#1825#0" expanded="true" />
-                <element signature="e#1814#1815#0" expanded="true" />
+                <element signature="e#1565#1786#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAPILevel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/GetAPILevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="5" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Activity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Android/studio/sdk/sources/android-19/android/app/Activity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1830" column="55" selection-start="82277" selection-end="82277" vertical-scroll-proportion="0.0" vertical-offset="29150" max-vertical-offset="90780">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,9 +178,14 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyContactsProvider.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/ProviderService.java" />
+        <option value="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/GetAPILevel.java" />
         <option value="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java" />
+        <option value="$PROJECT_DIR$/res/xml/dit_sync_authenticator.xml" />
+        <option value="$PROJECT_DIR$/res/xml/authenticator.xml" />
+        <option value="$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/SyncAdapter.java" />
+        <option value="$PROJECT_DIR$/res/xml/syncadapter.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -203,60 +249,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleContentProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,6 +270,12 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Droid\Dropbox\ARCHIVE\SimpleContentProvider\src\com\collosteam\SimpleContentProvider" />
+      <recent name="C:\Users\Droid\Dropbox\ARCHIVE\SimpleContentProvider\res\xml" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.SimpleContentProvider">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -464,12 +462,16 @@
       <created>1389875904630</created>
       <updated>1389875904630</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Insert all methods to ProviderService&#10;">
+      <created>1389950386613</created>
+      <updated>1389950386613</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1456" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -482,14 +484,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32720104" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39027596" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325887" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39027596" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34620887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34620887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
@@ -507,7 +509,10 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added editText to inserting data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added editText to inserting data" />
+    <MESSAGE value="Insert all methods to ProviderService&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insert all methods to ProviderService&#10;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -537,7 +542,10 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="476">
-          <folding />
+          <folding>
+            <element signature="e#310#328#0" expanded="true" />
+            <element signature="e#443#461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -545,8 +553,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="43" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1955">
           <folding>
-            <element signature="e#1604#1825#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1565#1786#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -578,7 +586,10 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="459">
-          <folding />
+          <folding>
+            <element signature="e#310#328#0" expanded="true" />
+            <element signature="e#443#461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,8 +597,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="43" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1751">
           <folding>
-            <element signature="e#1604#1825#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1565#1786#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -619,7 +630,10 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="459">
-          <folding />
+          <folding>
+            <element signature="e#310#328#0" expanded="true" />
+            <element signature="e#443#461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,8 +641,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="43" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1751">
           <folding>
-            <element signature="e#1604#1825#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1565#1786#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -703,6 +710,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/GetAPILevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Android/studio/sdk/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1830" column="55" selection-start="82277" selection-end="82277" vertical-scroll-proportion="0.0" vertical-offset="29150" max-vertical-offset="90780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="44" selection-start="8" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
+          <folding>
+            <element signature="e#1565#1786#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyContactsProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="47" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3536">
@@ -710,12 +741,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/authenticator.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="28" selection-start="3339" selection-end="3339" vertical-scroll-proportion="0.53424656" vertical-offset="1517" max-vertical-offset="2499">
+        <state line="3" column="58" selection-start="171" selection-end="181" vertical-scroll-proportion="0.10944206" vertical-offset="0" max-vertical-offset="466">
           <folding>
-            <element signature="e#1604#1825#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#366#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/collosteam/SimpleContentProvider/SyncAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="55" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/syncadapter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="30" selection-start="825" selection-end="825" vertical-scroll-proportion="0.7338129" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="e#310#328#0" expanded="true" />
+            <element signature="e#443#461#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <sync-adapter android:contentAuthority="com.collosteam.SimpleContentProvider"
+                  android:accountType="com.collosteam.SimpleContentProvider"
+                  android:userVisible="true"
+                  android:supportsUploading="true"
+                  android:allowParallelSyncs="true"
+                  android:isAlwaysSyncable="true"
+            />
+
+</PreferenceScreen>

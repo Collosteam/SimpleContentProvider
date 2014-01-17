@@ -18,5 +18,13 @@
         </provider>
 
         <service android:name=".ProviderService"/>
+
+        <intent-filter>
+            <action android:name="android.content.MySyncAdapter"/>
+        </intent-filter>
+        <meta-data android:name="android.content.SyncAdapter"
+                   android:resource="@xml/syncadapter"/>
+
+
     </application>
 </manifest>
