@@ -120,6 +120,7 @@ public class MyContactsProvider extends ContentProvider {
 
         db = dbHelper.getWritableDatabase();
         long rowID = db.insert(CONTACT_TABLE, null, values);
+
         Uri resultUri = ContentUris.withAppendedId(CONTACT_CONTENT_URI, rowID);
         // уведомляем ContentResolver, что данные по адресу resultUri изменились
         getContext().getContentResolver().notifyChange(resultUri, null);
